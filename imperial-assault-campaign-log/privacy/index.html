@@ -127,7 +127,7 @@
     <article>
       <h1>Privacy Policy for Imperial Assault Campaign Log</h1>
       <p class="updated">
-        <strong>Last updated:</strong> November 24, 2026
+        <strong>Last updated:</strong> November 25, 2026
       </p>
 
       <p>
@@ -146,7 +146,7 @@
         Crashlytics and Firebase Remote Config to understand how the app is used, to
         find crashes and to configure features. These services receive usage and
         technical information, never the contents of your campaign. The web version uses
-        Google Analytics only if you allow it.
+        first-party analytics when you choose Allow analytics.
       </p>
 
       <h2>2. Information stored on your device</h2>
@@ -224,17 +224,28 @@
       </p>
 
       <p>
-        Web analytics is off until you choose Allow in Analytics settings. If you allow it,
-        the website sends predefined categories and counts, such as opening a screen,
-        recording a mission result or restoring a backup. Analytics events exclude campaign
-        and backup contents, campaign and hero names, and text you enter. Declining analytics
-        does not restrict website features.
+        Website analytics starts off on every page load, including reloads. To enable it for
+        that page, choose Allow analytics. The browser must confirm the choice in first-party
+        cookie and local storage before sending events. You can decline or dismiss the
+        notice and keep using the website. Actions taken before you allow analytics are
+        not sent.
       </p>
 
+      <p>The website records these types of activity:</p>
+      <ul>
+        <li>opening Campaigns, Collection, or a saved campaign;</li>
+        <li>starting campaign creation, reaching selected steps, confirming creation, and recording its outcome;</li>
+        <li>choosing or drawing a mission, confirming a mission result, and recording its save outcome;</li>
+        <li>opening the shop and recording purchases, sales, or transfers;</li>
+        <li>exporting or restoring a backup, or deleting a campaign.</li>
+      </ul>
+
       <p>
-        Google Analytics uses cookies and may process browser and session identifiers,
-        browser and device characteristics, language, and approximate location derived
-        from network information.
+        Events contain fixed categories such as the screen, stage, card or mission type, and
+        save outcome. They exclude campaign and backup contents, campaign and hero names,
+        and text you enter. Each event has a random ID to prevent duplicate counting and
+        includes the time of the event and the time the server received it. The website
+        does not assign you a persistent analytics ID or send these events to Google Analytics.
       </p>
 
       <h2>5. Crash reporting and diagnostics</h2>
@@ -268,7 +279,7 @@
         campaign.
       </p>
 
-      <h2>7. Firebase, Google and the web version</h2>
+      <h2>7. Firebase, Google and Cloudflare</h2>
 
       <p>
         Google Analytics for Firebase, Firebase Crashlytics and Firebase Remote Config
@@ -298,12 +309,11 @@
       </p>
 
       <p>
-        The web version uses Google Analytics only after you choose Allow in Analytics settings.
-        Google processes that information to provide analytics. The web version has no crash
-        reporting or Remote Config. The hosting provider serves the website as static files and may
-        process technical information such as your IP address when your browser
-        requests those files, according to its own privacy practices. That information
-        is not available to the app or used by the developer.
+        Cloudflare hosts the website and processes its analytics requests. It may process
+        technical information such as your IP address when your browser makes a request,
+        according to its privacy practices. The analytics database does not store IP addresses,
+        request headers, or query strings. Access to that database is limited to authorized
+        operators. The web version has no crash reporting or Remote Config.
       </p>
 
       <h2>8. How information is used and shared</h2>
@@ -319,9 +329,8 @@
       </ul>
 
       <p>
-        The developer does not sell information, does not use it for advertising, and
-        does not share it with third parties other than Google as the provider of the
-        services described above.
+        The developer does not sell information or use it for advertising. Google and
+        Cloudflare process information to provide the Android and website services described above.
       </p>
 
       <h2>9. Backup files</h2>
@@ -365,12 +374,18 @@
       </p>
 
       <p>
-        For web analytics, the Google Analytics property is set to retain user-level data for
-        14 months and other event-level data for two months. Activity restarts the retention period
-        for the user identifier. These settings apply to individual data used in analysis. Standard
-        aggregate reports are governed separately. You can withdraw consent in Analytics settings.
-        Withdrawal stops further analytics collection in this browser. It does not remove information
-        already sent to Google Analytics. You can request deletion through the contact address below.
+        A scheduled cleanup removes website analytics events from the live database once they
+        are at least 24 hours old. If a cleanup is delayed, the next successful run removes
+        expired events. Deleted events may remain in Cloudflare's database recovery history
+        for the provider's recovery window.
+      </p>
+
+      <p>
+        Choose Turn off analytics in Privacy to stop new sends. The website tries to save
+        your refusal in browser storage and a first-party cookie. Privacy reports if it
+        cannot confirm the save. Each page load starts with analytics off. Clearing site data
+        removes the saved choice. Turning off analytics does not erase events already received.
+        You can ask about deletion using the contact address below.
       </p>
 
       <p>

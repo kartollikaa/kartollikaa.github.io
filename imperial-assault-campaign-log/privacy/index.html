@@ -127,7 +127,7 @@
     <article>
       <h1>Privacy Policy for Imperial Assault Campaign Log</h1>
       <p class="updated">
-        <strong>Last updated:</strong> November 25, 2026
+        <strong>Last updated:</strong> November 27, 2026
       </p>
 
       <p>
@@ -145,8 +145,9 @@
         campaign. The Android app may use Google Analytics for Firebase, Firebase
         Crashlytics and Firebase Remote Config to understand how the app is used, to
         find crashes and to configure features. These services receive usage and
-        technical information, never the contents of your campaign. The web version uses
-        first-party analytics when you choose Allow analytics.
+        technical information, never the contents of your campaign. The website offers
+        optional analytics through Cloudflare and Google Analytics. The notice explains which
+        services will receive events before you choose whether to allow analytics.
       </p>
 
       <h2>2. Information stored on your device</h2>
@@ -224,11 +225,11 @@
       </p>
 
       <p>
-        Website analytics starts off on every page load, including reloads. To enable it for
-        that page, choose Allow analytics. The browser must confirm the choice in first-party
-        cookie and local storage before sending events. You can decline or dismiss the
-        notice and keep using the website. Actions taken before you allow analytics are
-        not sent.
+        When the notice asks for permission to use Cloudflare and Google Analytics,
+        choosing Allow both permits new events to go to both services. An earlier
+        permission for Cloudflare alone does not authorize Google Analytics. A saved
+        choice can apply on later visits. You can decline or dismiss the notice and keep
+        using the website. Actions taken before permission for a service are not sent to it.
       </p>
 
       <p>The website records these types of activity:</p>
@@ -243,9 +244,18 @@
       <p>
         Events contain fixed categories such as the screen, stage, card or mission type, and
         save outcome. They exclude campaign and backup contents, campaign and hero names,
-        and text you enter. Each event has a random ID to prevent duplicate counting and
-        includes the time of the event and the time the server received it. The website
-        does not assign you a persistent analytics ID or send these events to Google Analytics.
+        and text you enter. Cloudflare receives a random event ID to prevent duplicate
+        counting plus the event time. The database records when it received the event.
+      </p>
+
+      <p>
+        With your permission, Google Analytics receives the allowed activity categories and
+        standard analytics information such as a browser identifier, session and engagement
+        information, browser and device details, and approximate location derived from network
+        information. For website events, the app supplies the public home address without the
+        path you navigated to, query parameters or a referring URL. The Cloudflare event ID
+        is reserved for Cloudflare. Google Analytics uses first-party cookies to recognize a
+        browser over a fixed 30-day period. The site uses this information for usage statistics.
       </p>
 
       <h2>5. Crash reporting and diagnostics</h2>
@@ -282,8 +292,8 @@
       <h2>7. Firebase, Google and Cloudflare</h2>
 
       <p>
-        Google Analytics for Firebase, Firebase Crashlytics and Firebase Remote Config
-        are provided by Google LLC. Information sent to these services is processed by
+        Google Analytics, Google Analytics for Firebase, Firebase Crashlytics and Firebase
+        Remote Config are provided by Google LLC. Information sent to these services is processed by
         Google on the developer's behalf to provide them, and is governed by Google's
         privacy and data-processing terms.
       </p>
@@ -366,8 +376,8 @@
       </ul>
 
       <p>
-        Analytics and diagnostic information sent to Firebase is kept for a limited time
-        according to the retention settings and policies of those Google services.
+        Analytics and diagnostic information sent to Google is kept according to the
+        retention settings and policies for the relevant Google service.
         Uninstalling the app does not immediately delete information that was already
         sent. You can ask the developer to delete it by writing to the contact address
         below.
@@ -383,8 +393,9 @@
       <p>
         Choose Turn off analytics in Privacy to stop new sends. The website tries to save
         your refusal in browser storage and a first-party cookie. Privacy reports if it
-        cannot confirm the save. Each page load starts with analytics off. Clearing site data
-        removes the saved choice. Turning off analytics does not erase events already received.
+        cannot confirm the save. The website also attempts to remove its Google Analytics
+        cookies when you turn analytics off. Clearing site data removes the saved choice.
+        Turning off analytics does not erase events already received.
         You can ask about deletion using the contact address below.
       </p>
 
